@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    cursor: grabbing;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+.columns {
+    padding: 50px;
+    margin: 50px;
+    columns: 3;
+    column-gap: 30px;
+}
+
+.todo, .progress, .done {
+    width: 300px;
+    height: 500px;
+    border-style: none;
+    background-color: lightgray;
+    padding: 15px;
+}
+
+.card-text {
+    background-color: aliceblue;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.add {
+    margin-top: 300px;
+    color: grey;
+}
