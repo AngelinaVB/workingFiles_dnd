@@ -1,5 +1,39 @@
 {
   "dependencies": {
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3",
+    "webpack-merge": "^6.0.1",
     "yarn": "^1.22.22"
+  },
+  "name": "workingFiles_dnd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint .",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist",
+    "test": "jest --testPathPattern=./src/",
+    "coverage": "jest --testPathPattern=./src/ --coverage"
+  },
+  "author": "“Angelina” <b.lina.1995@mail.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.28.6",
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.5",
+    "babel-loader": "^10.1.1",
+    "core-js": "^3.49.0",
+    "css-minimizer-webpack-plugin": "^8.0.0",
+    "eslint": "^10.4.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.7"
   }
 }

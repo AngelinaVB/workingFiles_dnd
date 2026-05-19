@@ -1,11 +1,11 @@
+import Card from './card';
+import Column from './column';
+import locStorage from './locStorage';
+// localStorage.clear()
+locStorage('.column');
 
+window.onload = function() {
+    const column = new Column('.columns');
 
-const btn = document.getElementById('btn');
-btn.addEventListener('click', () => {
-    const form = document.getElementById('add');
-    if (form.style.display === 'none') {
-        form.style.display = 'block';
-    } else {
-        form.style.display = 'none';
-    }
-});
+    const card = new Card('.columns');
+}

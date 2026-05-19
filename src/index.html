@@ -2,47 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trello</title>
 </head>
 
 <body>
-    <section class="columns">
-        <div class="todo">
-            <h2>TODO</h2>
-            <p class="card-text">
-                Welcome to Trello!
-            </p>
-            <p class="card-text">This is a card.</p>
-            <button id="addCard">
-                + Add another card
-            </button>
-            <div id="cardContainer"></div>
-        </div>
-        <div class="progress">
-            <h2>IN PROGRESS</h2>
-            <p class="card-text">
-                Welcome to Trello!
-            </p>
-            <p class="card-text">This is a card.</p>
-            <button id="addCard">
-                + Add another card
-            </button>
-            <div id="cardContainer"></div>
-        </div>
-        <div class="done">
-            <h2>DONE</h2>
-            <p class="card-text">
-                Welcome to Trello!
-            </p>
-            <p class="card-text">This is a card.</p>
-            <button id="addCard">
-                + Add another card
-            </button>
-            <div id="cardContainer"></div>
-        </div>
-    </section>
+  <div class="columns">
+    <div class="column" id="column_1">
+      <h4 class="colomn-title">TODO</h4>
+      <div class="cards"></div>
+      <a class="column-add__card"> + Add another card</a>
+    </div>
+    <div class="column" id="column_2">
+      <h4 class="colomn-title">IN PROGRESS</h4>
+      <div class="cards"></div>
+      <a class="column-add__card"> + Add another card</a>
+    </div>
+    <div class="column" id="column_3">
+      <h4 class="colomn-title">DONE</h4>
+      <div class="cards"></div>
+      <a class="column-add__card"> + Add another card</a>
+    </div>
+  </div>
 </body>
 
 </html>
